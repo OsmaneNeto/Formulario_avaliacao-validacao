@@ -1,0 +1,46 @@
+*{
+    position:   relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+body{
+    background-color: aliceblue;
+}
+form{
+    margin: auto;
+    width: 300px;
+    padding: 3em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    background-color: rgb(152, 89, 177);
+}
+label{
+    /* Para tercerteza que todas as labels tem o mesmo tamanho */
+    display: inline-block;
+    width: 20000px;
+    text-align: left;
+}
+
+
+input{
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+#caixa{
+    display: flex;
+    
+    text-align: left;
+}
+
+
+input:focus{
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color:#000;
+}
+div{
+    display: flex;
+}

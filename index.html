@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script type="text/javascript" src="js/validacao.js"></script>
+        <meta charset="UTF-8"/>
+        <title>Cadastro de Estudante</title>
+    </head>
+
+    <body>
+        <form name="myForm" onsubmit="return enviardados()">
+            
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="nome">
+            <label for="fsobrenome">Sobrenome:</label>
+            <input type="text" id="fsobrenome" name="sobrenome">
+            <label for="femail">Email:</label>
+            <input type="email" id="femail" name="email"><br></br>
+            <label>Em qual série você esta?</label><br></br>
+
+            <div>
+                
+                
+           <label for="fradio_Primeirasérie"> Primeiro Ano</label><input type="radio" id="fradio_Primeirasérie" name="série">
+           <!-- radio_ec_casado -->
+            </div>
+
+            <div>
+           <label for="fradio_Segundasérie">Segundo Ano</label> <input type="radio" id="fradio_Segundasérie" name="série">
+          <!-- radio_ec_solteiro -->
+            </div>
+            
+            <div>
+                <label for="fradio_Terceirasérie">Terceiro Ano</label> <input type="radio" id="fradio_Terceirasérie" name="série">
+               <!-- radio_ec_Divorciado -->
+                 </div>
+                 
+                
+                     <br></br>
+
+            <label for="f_condicao">Condição:</label><br><br>
+
+            <select name="Condicao" id="f_condicao">
+            
+            <option>Selecionar</option>
+            <option>Começando</option>
+            <option>Cursando</option>
+            <option>Ultimo Ano</option>
+           
+            </select>
+            <br><br>
+            <label for="f_selecione">Selecione o que mais combina com você:</label><br><br>
+            <div id="caixa">
+            <input type="checkbox" id="opcao1"  value="opcao1"/>
+        <label for="opcao1">Curioso, me dou bem com matérias de humanas, calmo(a), dedicado(a)</label>
+        <br></br>
+    </div>
+    <div id="caixa">
+        <input type="checkbox" id=" opcao2"  value="opcao2"/>
+       <label for="opcao2">Dedicado(a), gosto de desafios, lido bem com a pressão, sou organizado(a)</label>
+        <br></br>
+        </div>
+        <br></br>
+            <label for="fConteSobre">Conte um pouco sobre você:</label>
+            <input type="text" id="fConteSobre" name="ConteSobre">
+
+
+            <br><br><br>
+            <input class="button" name="btn_gravar" type="submit" value="Enviar">
+
+            
+
+        </form>
+        
+    </body>
+
+</html>
